@@ -25,7 +25,7 @@ Git Push → GitHub Actions → Build → ECR Push↓EC2 ← SSH + Docker Compos
 - SSH EC2 → docker compose up -d
 
 🚀 Déploiement live
-URL :  http://51.20.114.208/:80 
+URL :  http://51.20.114.208:8080 
 Screenshot : ![Image](https://github.com/user-attachments/assets/15fa300a-cbaf-4ec8-b350-df230b8d5f7f)
 
 🛠 Tech Stack
