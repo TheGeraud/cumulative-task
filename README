@@ -1,1 +1,40 @@
-NodeJs Version : 21
+# 🚀 Cumulative Task - Pipeline DevOps AWS
+
+**Node.js 21** • **GitHub Actions** → **ECR** → **EC2** • **Docker Compose**
+
+## 🎯 Architecture
+
+Git Push → GitHub Actions → Build → ECR Push↓EC2 ← SSH + Docker Compose → Live App :80
+
+
+## ✨ Fonctionnalités
+
+- ✅ **CI/CD** : Auto-deploy sur `main`
+- ✅ **Containerisé** : Docker + Node.js 21 + app.js
+- ✅ **AWS ECR** : Private registry versioning
+- ✅ **EC2 Production** : Ubuntu + Docker Compose
+- ✅ **Sécurisé** : AWS Secrets + SSH Keys
+
+## 📋 Workflow GitHub Actions
+
+```yaml
+# .github/workflows/deploy.yml
+- Configure AWS credentials (secrets)
+- docker build → coursera/cumulative-task:latest
+- docker push ECR
+- SSH EC2 → docker compose up -d
+
+🚀 Déploiement live
+URL :  http://51.20.114.208/:80 
+Screenshot : ![Image](https://github.com/user-attachments/assets/15fa300a-cbaf-4ec8-b350-df230b8d5f7f)
+
+🛠 Tech Stack
+
+Frontend    Backend      Infra          CI/CD
+HTML/CSS    Node.js 21   AWS EC2/ECR    GitHub Actions
+
+📖 Setup local
+npm install
+npm start
+
+Auteur : Géraud DZONGANG | DevOps Portfolio | Coursera Certified
