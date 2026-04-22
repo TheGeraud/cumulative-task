@@ -4,7 +4,7 @@
 
 ## 🎯 Architecture
 
-Git Push → GitHub Actions → Build → ECR Push↓EC2 ← SSH + Docker Compose → Live App : http://51.20.114.208:8080
+Git Push → GitHub Actions → Build → ECR Push↓EC2 ← SSH + Docker Compose → Live App : disponible sur demande
 
 
 ##  Fonctionnalités
@@ -39,4 +39,4 @@ npm install
 npm start
 # Port 3000 → http://localhost:3000
 
-Auteur : TheGeraud | DevOps Portfolio | Coursera Certified
+Auteur : TheGeraud | DevOps Portfolio
