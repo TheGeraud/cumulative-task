@@ -1,6 +1,6 @@
 services:
   app:
-    image: 049705857334.dkr.ecr.eu-north-1.amazonaws.com/coursera/cumulative-task:latest
+    image: ${{ secrets.ECR_REGISTRY }}/coursera/cumulative-task:latest
     ports:
       - "8080:80"
     restart: unless-stopped
