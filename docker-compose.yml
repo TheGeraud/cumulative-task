@@ -1,6 +1,6 @@
 services:
   app:
-    image: ${{ secrets.ECR_REGISTRY }}/coursera/cumulative-task:latest
+    image: ${ECR_REGISTRY}/cumulative-task:latest
     ports:
       - "8080:80"
     restart: unless-stopped
